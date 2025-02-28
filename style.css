@@ -512,14 +512,15 @@ input {
 
 /* Tablets (max-width: 1024px) */
 @media screen and (max-width: 1024px) {
-    nav {
-        padding: 15px 20px;
-    }
+    
 
     ul {
         gap: 25px;
     }
-
+    
+    .logo {
+        font-size: 17px;
+    }
     .header-content {
         font-size: 20px;
         padding: 80px 30px;
@@ -574,13 +575,12 @@ input {
 /* Mobile Devices (max-width: 768px) */
 @media screen and (max-width: 768px) {
     /* Navigation */
-    .menu-toggle {
-        display: block;
-        position: absolute;
-        right: 20px;
-        top: 15px;
-        cursor: pointer;
+    nav {
+        margin: 0;
+        padding: 15px 20px 15px 15px;
     }
+
+    
 
     ul {
         display: none;
@@ -601,7 +601,12 @@ input {
     ul li {
         margin: 10px 0;
     }
-
+    .logo {
+        font-size: 17px;
+    }
+    /* .contact {
+        display: none;
+    } */
     /* Header */
     .header-content {
         font-size: 18px;
@@ -690,5 +695,3 @@ input {
         justify-content: center;
     }
 }
-
- /* please don't alter my code just add responsiveness */
