@@ -1,0 +1,170 @@
+
+<!-- html -->
+
+
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Estate</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+</head>
+<body>
+    <header id="home">
+        <nav>
+            <div class="logo">ODIN'S HOUSE</div>
+            <!-- <div class="menu-toggle" onclick="toggleMenu()">
+                <i class="fas fa-bars"></i>
+            </div> -->
+            <ul class="nav-btn">
+                <li><a href="#home">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#catalog">Catalog</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+             <div class="contact">
+                <a href="tel:004479221234567">0044 792 212 3456</a>
+             </div>
+        </nav>
+        <div class="header-content">
+            <h3>REAL ESTATE AGENCY</h3>
+            <h1>NEW WAY OF LIVING</h1>
+            <p>Welcome to ODIN'S HOUSE, Discover our luxurious and stylish homes
+                <br>At the heart of our beautiful city. Book your stay today!
+                <br>We're here to help you find your perfect home.
+            </p>
+            <button type="button" class="btn"><a href=""></a>VIEW CATALOG</button>
+        </div>
+    </header>
+
+
+    <section id="about">
+        <div class="profile">
+            <div id="profile"><img src="./image/gen.jpg"></div>
+        </div>
+        <div class="container">
+        <h4 class="subheading">— ABOUT US</h4>
+            <h2 class="title">REAL ESTATE STUDIO</h2>
+            <p class="bold-text">
+                It is our main responsibility to ensure that the buyer receives a hassle-free property and a completely secure legal transaction.
+            </p>
+            <p class="description">
+                As a result of such an organization of the business process, you have the opportunity to choose, rent really high-quality and liquid real estate objects that will be guaranteed to bring pleasure to both the tenant and the landlord.
+            </p>
+            <button class="read-more">READ MORE</button>
+
+            <div class="stats">
+                <div class="stat">
+                    <h3>12</h3>
+                    <p>years of work</p>
+                </div>
+                <div class="stat">
+                    <h3>99+</h3>
+                    <p>rental houses</p>
+                </div>
+                <div class="stat">
+                    <h3>72</h3>
+                    <p>deals per year</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <section id="catalog">
+        <h4 class="subheading">— catalog</h4>
+        <h2 class="title">HOUSES FOR RENT</h2>
+        <div class="catalog-container">
+
+              <!-- Property 1 -->
+              <div class="property-card">
+                <img src="./image/white.jpg" alt="Nema Boston" class="property-image">
+                <div class="overlay"></div>
+                <div class="content">
+                    <h2 class="property-title">NEMA BOSTON</h2>
+                    <p class="property-description">Locally inspired interiors, tech-powered service, and curated lifestyle programming...</p>
+                    <p class="price">From <span>$359.99</span> / month</p>
+                    <button class="rent-button">RENT</button>
+                </div>
+            </div>
+            
+                <!-- Property 2 -->
+            <div class="property-card">
+                <img src="./image/gen.jpg" alt="Modern House" class="property-image">
+                <div class="overlay"></div>
+                <div class="content">
+                    <h2 class="property-title">THE EMERY</h2>
+                    <p class="property-description">
+                        The Emery takes amenity-rich, contemporary living to a new level in the Bay Area waterfront city. 
+                        Comprised of four residential buildings, each features a distinct design vision while...
+                    </p>
+                    <p class="price">From <span>$489.99</span> / month</p>
+                    <button class="rent-button">RENT</button>
+                </div>
+            </div>
+
+            <!-- Property 3 -->
+            <div class="property-card">
+                <img src="./image/back.jpg" alt="Villa Kayu Raja" class="property-image">
+                <div class="overlay"></div>
+                <div class="content">
+                    <h2 class="property-title">VILLA KAYU RAJA</h2>
+                    <p class="property-description">Spacious chalet in Méribel with 6 bedrooms just 200 meters from the ski lifts...</p>
+                    <p class="price">From <span>$299.99</span> / month</p>
+                    <button class="rent-button">RENT</button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="contact">
+        <div class="contact-info">
+            <h4>— CONTACT</h4>
+            <h2>ANY OTHER QUESTIONS?</h2>
+            <p>
+                We provide consulting support on issues related to the ownership and management of real estate,
+                services for the analysis of tax and legal risks associated with the lease, as well as legal
+                support of relevant transactions.
+            </p>
+        </div>
+
+        <div id="contact-form">
+            <h3>Get a <span class="highlight">free</span> expert consultation</h3>
+            <form onsubmit="sendEmail(event)">
+
+                <label for="name">NAME</label>
+                <input type="text" id="name" name="name" required>
+
+                <label for="phone">PHONE NUMBER</label>
+                <input type="tel" id="phone" name="phone" required>
+
+                <p class="consent-text">
+                    By clicking "SEND", you give your consent to the processing of personal data.
+                </p>
+
+                <button type="submit" class="send-button">SEND</button>
+                <p id="form-message"></p>
+
+            </form>
+        </div>
+    </section>
+    
+
+    <footer class="footer">
+        <div class="social-media">
+            <a href="#"><i class="fab fa-facebook"></i></a>
+            <a href="#"><i class="fab fa-twitter"></i></a>
+            <a href="#"><i class="fab fa-instagram"></i></a>
+            <a href="#"><i class="fab fa-linkedin"></i></a>
+        </div>
+        <p class="copyright">Copyright © 2024 ODIN'S HOUSE. ALL RIGHTS RESERVED.</p>
+    </footer>
+    
+
+    <script src="script.js"></script>
+</body>
+</html>
